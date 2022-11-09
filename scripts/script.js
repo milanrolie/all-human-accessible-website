@@ -1,4 +1,6 @@
 // js-more-info
+const inlogBtn = document.querySelector(".js-inlog")
+const inlog = document.querySelector(".inlog");
 const allButtons = document.querySelectorAll(".js-more-info");
 const flexcon = document.querySelector(".flexcon");
 const ondergrond = document.querySelector(".ondergrond");
@@ -10,7 +12,9 @@ const overview = document.querySelector(".overview");
 const searchBtn = document.querySelector(".js-search");
 const search = document.querySelector(".search");   
 const gradient = document.querySelector(".gradient");
-const flexScroll = document.querySelector("#flec-scroll")
+const flexScroll = document.querySelector("#flex-scroll")
+
+
 
 
 
@@ -42,6 +46,10 @@ searchBtn.addEventListener('click', () => {
     search.classList.toggle("active")
 })
 
+// Functie voor de inlog knop
+inlogBtn.addEventListener('click', () => {
+    inlog.classList.toggle("active")
+})
 
 // Functie voor de locate knop
 function closeSlide() {
@@ -52,4 +60,6 @@ function closeSlide() {
         box.classList.toggle("active")
         gradient.classList.toggle("active")
     }
+
+
 }
